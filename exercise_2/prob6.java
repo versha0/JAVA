@@ -5,17 +5,20 @@ class prob6{
 
         for(int i=1;i<10;i++){
             int f=factorial(i);
+            if(f> )
             System.out.println("Factorial of "+i + "is"+f);
             
         }
     }
     public static int factorial(int n){
         int f=1;
-      
+      try{
         for(int k=1;k<=n;k++){
             f= f*k;
         }
-           return f; 
-        
+    }
+        throw new OutOfMemoryError;
+           
+    }
     }
 }
